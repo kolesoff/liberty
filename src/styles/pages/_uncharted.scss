@@ -1,0 +1,17 @@
+.uncharted .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .message {
+        text-align: center;
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 1.4;
+        letter-spacing: 20px;
+        color: white;
+        text-shadow: 0 0 4px black, 0 0 40px black;
+        user-select: none;
+    }
+}

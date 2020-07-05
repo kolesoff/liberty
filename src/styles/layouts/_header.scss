@@ -1,0 +1,46 @@
+.header {
+    scroll-snap-align: start;
+    background-color: $color-dark;
+
+    .container {
+        display: flex;
+        justify-content: flex-end;
+        padding: $base*4 $base*8 $base*4 $base*40;
+        position: relative;
+
+        .logo {
+            position: absolute;
+            top: $base*3;
+            left: $base*8;
+            color: white;
+
+            &:hover {
+                text-decoration: none;
+            }
+
+            .icon {
+                height: 40px;
+            }
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+
+            .nav-item {
+                display: block;
+                padding: $base;
+                color: $color-white;
+                text-decoration: none;
+
+                &:not(:last-child) {
+                    margin-right: $base*4;
+                }
+
+                &.active {
+                    color: $color-yellow;
+                }
+            }
+        }
+    }
+}

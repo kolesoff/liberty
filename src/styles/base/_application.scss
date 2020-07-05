@@ -1,0 +1,35 @@
+html, body, .root {
+    height: 100%;
+    position: relative;
+}
+
+body {
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: $font-family-default;
+    min-width: $base*80;
+}
+
+.root {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        'header'
+        'main' 
+        'footer';
+    scroll-snap-type: y proximity;
+    overflow-y: auto;
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}

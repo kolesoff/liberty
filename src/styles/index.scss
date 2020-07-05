@@ -1,0 +1,12 @@
+@import "~bootstrap/scss/bootstrap";
+
+@import './base/variables';
+@import './base/application';
+
+@import './layouts/header';
+@import './layouts/main';
+@import './layouts/footer';
+
+@import './pages/continent';
+@import './pages/adventure';
+@import './pages/uncharted';
